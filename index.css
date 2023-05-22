@@ -1,0 +1,88 @@
+body {
+    background-color: darkgray;
+    background-size: cover;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    height: 100vh;
+}
+
+.container {
+    background: lightslategray;
+    max-width: 65%;
+    min-height: 100%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+.textbox {
+    background: whitesmoke;
+    max-width: 80%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+img {
+    max-width: 25%;
+    margin: 15px;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2.5vw;
+}
+
+h2 {
+    margin: 15px;
+    font-size: 1.5vw;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.1vw;
+}
+
+button {
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background: darkgray;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: green;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 auto;
+    gap: 1rem;
+    flex: 0 0 80px;
+    flex-direction: row;
+    padding: 40px 0px;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .bottom { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .bottom { grid-template-columns: repeat(1, 1fr); }
+}
